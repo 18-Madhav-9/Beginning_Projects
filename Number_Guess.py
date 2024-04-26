@@ -4,7 +4,7 @@ def number_guess(upper_limit,lower_limit):
     system_guess = random.randrange(upper_limit,lower_limit)
 
 play = input("Do you want to Play the Game (Enter Yes or No ):")
-if play.lower() == "yes":
+while play.lower() == "yes":
     count = 0
     upper_limit = int(input("Enter Upper Limit :"))
     lower_limit = int(input("Enter Lower Limit :"))
@@ -23,3 +23,8 @@ if play.lower() == "yes":
             count += 1
         else :
             print("Something is wrong ")
+    play = input("Do You want to play again :")
+    if play.lower() == "yes" :
+        continue
+    else :
+        break
