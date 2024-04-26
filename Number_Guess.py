@@ -1,7 +1,5 @@
 import random 
 
-def number_guess(upper_limit,lower_limit):
-    system_guess = random.randrange(upper_limit,lower_limit)
 
 play = input("Do you want to Play the Game (Enter Yes or No ):")
 while play.lower() == "yes":
@@ -24,6 +22,7 @@ while play.lower() == "yes":
         else :
             print("Something is wrong ")
     play = input("Do You want to play again :")
+
     if play.lower() == "yes" :
         continue
     else :
